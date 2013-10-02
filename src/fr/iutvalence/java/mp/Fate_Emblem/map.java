@@ -13,6 +13,9 @@ public class map
   int tower=2;
   int wall =3;
   
+  /**
+   * this constructor create a new map
+   */
   public map()
   {
       int T1[] [] = new int [80] [80]; 
