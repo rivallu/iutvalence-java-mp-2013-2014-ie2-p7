@@ -13,5 +13,9 @@ public class map
   int tower=2;
   int wall =3;
   
+  public map()
+  {
+      int T1[] [] = new int [80] [80]; 
+  }
 
 }
