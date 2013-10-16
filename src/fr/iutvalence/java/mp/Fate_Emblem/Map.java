@@ -5,26 +5,30 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  *
  */
 // TODO (fix) comply with naming conventions
-public class map
+public class Map
 {
-  // TODO (fix) write comment  
-    
+  // TODO (fixed) write comment  
+  /**
+   * it's a representation of a map in a board in 2 dimensions.
+   */
   int[][] map;
  // some decor of the map
   
-  // TODO (fix) declare constants as constants
-  int water =0;
-  int wood=1;
-  int tower=2;
-  int wall =3;
+  // TODO (fixed) declare constants as constants
+  static int water =0;
+  static int wood = 1;
+  static int tower=2;
+  static int wall =3;
   
-  // TODO (fix) detail comment
+  // TODO (fixed) detail comment
   /**
    * this constructor creates a new map
+   * with 80 case*80case
    */
-  public map()
+  public Map()
   {
-      int T1[] [] = new int [80] [80]; 
+      int map[] [] = new int [80] [80]; 
+      
   }
 
 }
