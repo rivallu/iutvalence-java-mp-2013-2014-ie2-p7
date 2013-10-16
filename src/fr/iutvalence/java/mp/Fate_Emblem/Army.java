@@ -7,7 +7,9 @@ package fr.iutvalence.java.mp.Fate_Emblem;
 
 public class Army
 {
+ // it's the board for the army
  public Unit[] army;
+ //it's the variable for the hero 
   public Unit hero;
   public Army(Unit hero)
   {
