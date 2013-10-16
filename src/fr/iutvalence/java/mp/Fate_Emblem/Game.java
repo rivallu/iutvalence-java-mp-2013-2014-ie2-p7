@@ -1,4 +1,6 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
+
+// TODO (fix) rewrite comment
 /**
  * It's when the game start
  * @author rivallu
@@ -6,7 +8,9 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class Game
 {
+    // TODO (fix) write comment
     private Player[] players;
+
+    // TODO (fix) write comment
     private map map;
-    
 }

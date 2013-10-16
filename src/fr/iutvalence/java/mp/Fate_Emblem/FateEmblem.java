@@ -8,5 +8,6 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class FateEmblem
 {
+    // TODO (think about it) you should create a new game and play it
 ;
 }

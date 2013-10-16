@@ -9,7 +9,7 @@ package fr.iutvalence.java.mp.unities;
 
 import fr.iutvalence.java.mp.Fate_Emblem.Unity;
 
-
+// TODO (fix) one class per file
 /**
  * Archer is a hero's class
  * @author rivallu

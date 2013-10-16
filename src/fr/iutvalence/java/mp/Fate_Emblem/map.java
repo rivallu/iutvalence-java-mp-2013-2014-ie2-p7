@@ -4,17 +4,23 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  * @author rivallu
  *
  */
+// TODO (fix) comply with naming conventions
 public class map
 {
-  int map[] [];
+  // TODO (fix) write comment  
+    
+  int[][] map;
  // some decor of the map
+  
+  // TODO (fix) declare constants as constants
   int water =0;
   int wood=1;
   int tower=2;
   int wall =3;
   
+  // TODO (fix) detail comment
   /**
-   * this constructor create a new map
+   * this constructor creates a new map
    */
   public map()
   {
