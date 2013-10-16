@@ -1,9 +1,9 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
 
-    public class Archer extends Unity
+    public class Archer extends Unit
     {
-        public void initArcher()
+        public Archer()
         {
             super(4,2,2,0,7);
         }
