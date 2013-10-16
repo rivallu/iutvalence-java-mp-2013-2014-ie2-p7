@@ -5,15 +5,13 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  *
  */
 
-public class Saber extends Unity
-{
-    
-    
-    // TODO (fix) declare constructor as a constructor
+public class Saber extends Unit
+{  
+    // TODO (fixed) declare constructor as a constructor
     /**
      * the constructor use to initialize Saber
      */
-    public void initSaber()
+    public Saber()
     {
         super(4,2,2,0,7);
     }
