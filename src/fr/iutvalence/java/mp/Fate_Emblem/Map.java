@@ -6,30 +6,48 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  * @author rivallu
  * 
  */
-// TODO (fix) comply with naming conventions
+// TODO (fixed) comply with naming conventions
 public class Map
 {
-    // TODO (fix) rewrite comment
-    /**
-     * it's a representation of a map in a board in 2 dimensions.
-     */
-    // TODO (fix) this field should be declared as private
-    int[][] map;
-    // some decor of the map
 
-    // TODO (fix) declare constants as constants
-    static int water = 0;
-    static int wood = 1;
-    static int tower = 2;
-    static int wall = 3;
+    /**
+     * it's a double dim board for generate a map.
+     */
+    private int[][] map;
+
+    public static final int MAP_MAX_SIZE = 80;
+    
+    public static final int WATER = 0;
+    public static final int WOOD = 1;
+    public static final int TOWER = 2;
+    public static final int WALL = 3;
 
     /**
      * this constructor creates a new map with 80 case*80case
      */
     public Map()
     {
-        // TODO (fix) declare hard-coded values as constants
-        int map[][] = new int[80][80];
+        this.map = new int[MAP_MAX_SIZE][MAP_MAX_SIZE];
     }
+
+    /**
+     * print the map 
+     */
+    public void affiche ()
+    {
+        for (int i=0;i<=MAP_MAX_SIZE;i++)
+        {
+            for (int j=0; j<=MAP_MAX_SIZE;j++)
+            {
+                System.out.print(this.map[i][j]);
+            }
+            System.out.println("");  
+        }
+    }
+    public void add_decor()
+    {
+        
+    }
+
 
 }

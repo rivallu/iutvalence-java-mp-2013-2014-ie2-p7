@@ -1,8 +1,8 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
-// TODO (fix) rewrite comment
+// TODO (fixed) rewrite comment
 /**
- * It's when the game start
+ * it's the class for generate the beginning of the game
  * 
  * @author rivallu
  * 
@@ -10,12 +10,24 @@ package fr.iutvalence.java.mp.Fate_Emblem;
 public class Game
 {
     // TODO (fix) rewrite comment
-    // it's a board of players
+    /**
+     * save the name of players
+     */
     private Player[] players;
 
-    // TODO (fix) write a "Javadoc" comment
-    // it's the Map
+    // TODO (fixed) write a "Javadoc" comment
+    /**
+     *  save the map
+     */
     private Map map;
+    /**
+     * in millisecond, the time for a player's round
+     */
+    public static final int TIME = 120000;
+    /**
+     * variable for know if the game is ending or not
+     */
+    private int END_GAME= 1;
 
     /**
      * this constructor create 2 players and generate the map
@@ -32,8 +44,18 @@ public class Game
     public Game(String name1, String name2, Army army1, Army army2)
     {
         Player players[] = new Player[2];
-        players[0] = Player(name1, army1);
-        players[1] = Player(name2, army2);
-        this.map = Map();
+        players[0] = new Player(name1, army1);
+        players[1] = new Player(name2, army2);
+        this.map = new Map();
+    }
+
+    public void play()
+    {
+        while (END_GAME!=-1)
+        {
+           map.affiche();
+           
+        }
+        
     }
 }

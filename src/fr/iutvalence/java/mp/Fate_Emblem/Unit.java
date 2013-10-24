@@ -6,30 +6,39 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  * @author rivallu
  * 
  */
-// TODO (fix) this class should be named Unit
+// TODO (fixed) this class should be named Unit
 public abstract class Unit
 {
     /**
      * We define variables for unities ( atk,def,speed,magic,life)
      */
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    // it's a variable to represent the attack of an unity
     private int atk;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    //it's a variable to represent the defense of an unity
     private int def;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    //it's a variable to represent the movement speed of an unity
     private int speed;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    //it's a variable to represent the magic power of an unity
     private int magic;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    //it's a variable to represent the life of an unity
     private int life;
+    
+    private int X;
+    private int Y;
 
-    // TODO (fix) finish writing comment
+    // TODO (fixed) finish writing comment
     /**
+     * it's the constructor for generate all unities
      * @param atk
      *            it's a variable to represent the attack of an unity
      * @param def
@@ -41,14 +50,19 @@ public abstract class Unit
      * @param life
      *            it's a variable to represent the life of an unity
      */
-    // TODO (fix) if this is a constructor, declare it as a constructor
-    public void newunity(int atk, int def, int speed, int magic, int life)
+    // TODO (fixed) 
+    public Unit (int atk, int def, int speed, int magic, int life)
     {
         this.atk = atk;
         this.def = def;
         this.speed = speed;
         this.magic = magic;
         this.life = life;
+    }
+    
+    public void deplacement (Unit unit)
+    {
+        
     }
 
 }
