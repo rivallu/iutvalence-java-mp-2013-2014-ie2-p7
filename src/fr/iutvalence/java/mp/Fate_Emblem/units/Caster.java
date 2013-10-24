@@ -1,4 +1,6 @@
-package fr.iutvalence.java.mp.Fate_Emblem;
+package fr.iutvalence.java.mp.Fate_Emblem.units;
+
+import fr.iutvalence.java.mp.Fate_Emblem.Unit;
 
 /**
  * Caster is a hero's class

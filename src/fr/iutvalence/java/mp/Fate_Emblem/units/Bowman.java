@@ -1,4 +1,6 @@
-package fr.iutvalence.java.mp.Fate_Emblem;
+package fr.iutvalence.java.mp.Fate_Emblem.units;
+
+import fr.iutvalence.java.mp.Fate_Emblem.Unit;
 
 /**
  * Bowman is a hero's class
