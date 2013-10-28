@@ -10,18 +10,17 @@ package fr.iutvalence.java.mp.Fate_Emblem;
 public class Army
 {
     // it's the board for the army
-    // TODO (fixed) this field should be declared as private
-    // TODO (fixed) write comment
+
     private Unit[] army;
-    
-    // TODO (fixed) this field should be declared as private
-    // TODO (fixed) write comment
+
+    // TODO (fix) write javadoc comment
     // it's the variable for the hero
     private Unit hero;
 
-    // TODO (fixed) write comment
+    // TODO (fix) finish writing comment
     /**
      * it's the constructor for generate an army
+     * 
      * @param hero
      */
     public Army(Unit hero)

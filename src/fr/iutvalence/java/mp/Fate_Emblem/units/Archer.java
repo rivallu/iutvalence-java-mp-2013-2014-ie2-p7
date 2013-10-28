@@ -3,6 +3,8 @@
 
 package fr.iutvalence.java.mp.Fate_Emblem.units;
 
+import fr.iutvalence.java.mp.Fate_Emblem.Unit;
+
 public class Archer extends Unit
 {
     // TODO (fixed)it's the constructor to generate the Archer hero

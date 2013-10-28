@@ -8,20 +8,19 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class Player
 {
-    // TODO (fixed) this field should be declared as private
-    // TODO (fixed) write comment
-    // name will be save the name of a player 
+    // TODO (fix) write javadoc comment
+    // name will be save the name of a player
     private String name;
-    
-    // TODO (fixed) this field should be declared as private
-    // TODO (fixed) write comment
+
+    // TODO (fix) write javadoc comment
     // this variable will save the army of the player
     private Army army;
-    
-    public Player (String name, Army army)
+
+    // TODO (fix) write comment
+    public Player(String name, Army army)
     {
-        this.name= name;
-        this.army=army;
+        this.name = name;
+        this.army = army;
     }
 
 }

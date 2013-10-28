@@ -9,25 +9,28 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class Game
 {
-    // TODO (fix) rewrite comment
+    /**
+     * in millisecond, the time for a player's round
+     */
+    public static final int TIME = 120000;
+    
+    // TODO (fix) rewrite comment (do not say it allow to store something, say what is this something)
     /**
      * save the name of players
      */
     private Player[] players;
 
-    // TODO (fixed) write a "Javadoc" comment
+    // TODO (fix) rewrite comment (do not say it allow to store something, say what is this something)
     /**
-     *  save the map
+     * save the map
      */
     private Map map;
-    /**
-     * in millisecond, the time for a player's round
-     */
-    public static final int TIME = 120000;
+   
+    // TODO (fix) looks like a constant, but it is not
     /**
      * variable for know if the game is ending or not
      */
-    private int END_GAME= 1;
+    private int END_GAME = 1;
 
     /**
      * this constructor create 2 players and generate the map
@@ -49,13 +52,13 @@ public class Game
         this.map = new Map();
     }
 
+    // TODO (fix) write comment
     public void play()
     {
-        while (END_GAME!=-1)
+        while (END_GAME != -1)
         {
-           map.affiche();
-           
+            this.map.display();
         }
-        
+
     }
 }

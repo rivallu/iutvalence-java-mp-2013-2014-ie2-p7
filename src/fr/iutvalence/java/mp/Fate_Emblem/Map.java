@@ -6,48 +6,57 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  * @author rivallu
  * 
  */
-// TODO (fixed) comply with naming conventions
 public class Map
 {
+    // TODO (fix) write comment
+    public static final int MAP_MAX_SIZE = 80;
+
+    // TODO (fix) write comment
+    public static final int WATER = 0;
+    
+    // TODO (fix) write comment
+    public static final int WOOD = 1;
+    
+    // TODO (fix) write comment
+    public static final int TOWER = 2;
+    
+    // TODO (fix) write comment
+    public static final int WALL = 3;
 
     /**
      * it's a double dim board for generate a map.
      */
     private int[][] map;
 
-    public static final int MAP_MAX_SIZE = 80;
-    
-    public static final int WATER = 0;
-    public static final int WOOD = 1;
-    public static final int TOWER = 2;
-    public static final int WALL = 3;
 
     /**
-     * this constructor creates a new map with 80 case*80case
+     * this constructor creates a new map with default size
      */
     public Map()
     {
         this.map = new int[MAP_MAX_SIZE][MAP_MAX_SIZE];
     }
 
+    // TODO (fix) replace this by an overriding of Object#toString
     /**
-     * print the map 
+     * display the map
      */
-    public void affiche ()
+    public void display()
     {
-        for (int i=0;i<=MAP_MAX_SIZE;i++)
+        for (int i = 0; i <= MAP_MAX_SIZE; i++)
         {
-            for (int j=0; j<=MAP_MAX_SIZE;j++)
+            for (int j = 0; j <= MAP_MAX_SIZE; j++)
             {
                 System.out.print(this.map[i][j]);
             }
-            System.out.println("");  
+            System.out.println("");
         }
     }
+
+    // TODO (fix) write comment
     public void add_decor()
     {
-        
-    }
 
+    }
 
 }
