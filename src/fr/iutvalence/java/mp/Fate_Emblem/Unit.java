@@ -12,24 +12,34 @@ public abstract class Unit
      * We define variables for unities ( atk,def,speed,magic,life)
      */
 
-    // TODO (fix) write javadoc comment
-    // it's a variable to represent the attack of an unity
+    // TODO (fixed) write javadoc comment
+    /**
+     *  it's a variable to represent the attack of an unity
+     */
     private int atk;
 
-    // TODO (fix) write javadoc comment
-    // it's a variable to represent the defense of an unity
+    // TODO (fixed) write javadoc comment
+    /**
+     *  it's a variable to represent the defense of an unity
+     */
     private int def;
 
-    // TODO (fix) write javadoc comment
-    // it's a variable to represent the movement speed of an unity
+    // TODO (fixed) write javadoc comment
+    /**
+     *  it's a variable to represent the movement speed of an unity
+     */
     private int speed;
 
-    // TODO (fix) write javadoc comment
-    // it's a variable to represent the magic power of an unity
+    // TODO (fixed) write javadoc comment
+    /**
+     *  it's a variable to represent the magic power of an unity
+     */
     private int magic;
 
-    // TODO (fix) write javadoc comment
-    // it's a variable to represent the life of an unity
+    // TODO (fixed) write javadoc comment
+    /**
+     *  it's a variable to represent the life of an unity
+     */
     private int life;
 
     
@@ -68,10 +78,14 @@ public abstract class Unit
         this.life = life;
     }
 
-    // TODO (fix) write comment
+    /**
+     * it's the method for move a unit
+     * @param unit
+     */
     public void deplacement(Unit unit)
     {
-
+        this.X= this.X+this.speed;
+        this.Y= this.Y+this.speed;
     }
 
 }

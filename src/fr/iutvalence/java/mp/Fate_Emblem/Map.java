@@ -8,19 +8,34 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class Map
 {
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * it's the max size of the Map
+     */
     public static final int MAP_MAX_SIZE = 80;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * it's a static variable for represent a decor
+     */
     public static final int WATER = 0;
     
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * it's a static variable for represent a decor
+     */
     public static final int WOOD = 1;
     
-    // TODO (fix) write comment
+    // TODO (fixed) write comment 
+    /**
+    * it's a static variable for represent a decor
+    */
     public static final int TOWER = 2;
     
-    // TODO (fix) write comment
+    // TODO (fixed) write comment 
+    /**
+    * it's a static variable for represent a decor
+    */
     public static final int WALL = 3;
 
     /**
@@ -41,21 +56,40 @@ public class Map
     /**
      * display the map
      */
-    public void display()
+    
+    public String toString()
     {
+        String result="";
         for (int i = 0; i <= MAP_MAX_SIZE; i++)
         {
             for (int j = 0; j <= MAP_MAX_SIZE; j++)
             {
-                System.out.print(this.map[i][j]);
+               result = result + this.map[i][j];
             }
-            System.out.println("");
+            result = result +"\n";
         }
+        System.out.println(result);
+        return result;
     }
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * This method will generate a decor for the map 
+     */
     public void add_decor()
     {
+        for (int i=0; i<=10; i++)
+        {
+            int j = (int) (Math.random() * 40 );
+            int nb = (int) (Math.random() * 5 );
+            this.map[i][j]= nb ;
+        }
+        for (int i=60; i<=80; i++)
+        {
+            int j = (int) (Math.random() * 40 );
+            int nb = (int) (Math.random() * 5 );
+            this.map[i][j]= nb ;
+        }
 
     }
 

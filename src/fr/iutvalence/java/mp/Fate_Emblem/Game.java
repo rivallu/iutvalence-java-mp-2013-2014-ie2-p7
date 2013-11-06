@@ -14,15 +14,15 @@ public class Game
      */
     public static final int TIME = 120000;
     
-    // TODO (fix) rewrite comment (do not say it allow to store something, say what is this something)
+    // TODO (fixed) rewrite comment (do not say it allow to store something, say what is this something)
     /**
-     * save the name of players
+     * it's a board for stock the different players
      */
     private Player[] players;
 
-    // TODO (fix) rewrite comment (do not say it allow to store something, say what is this something)
+    // TODO (fixed) rewrite comment (do not say it allow to store something, say what is this something)
     /**
-     * save the map
+     * It's a Map
      */
     private Map map;
    
@@ -52,13 +52,18 @@ public class Game
         this.map = new Map();
     }
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * this method will start the game
+     */
     public void play()
     {
-        while (END_GAME != -1)
-        {
-            this.map.display();
-        }
+        this.map.add_decor();
+        System.out.println(this.map);
+        //while (END_GAME != -1)
+        //{
+        //    System.out.println(this.map);
+        //}
 
     }
 }

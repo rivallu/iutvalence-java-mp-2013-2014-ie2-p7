@@ -1,4 +1,8 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+import fr.iutvalence.java.mp.Fate_Emblem.units.Villager;
 
 /**
  * the army class composed by some units and one hero
@@ -9,9 +13,9 @@ package fr.iutvalence.java.mp.Fate_Emblem;
 
 public class Army
 {
-    // it's the board for the army
+    // it's collection of unities
 
-    private Unit[] army;
+    private Hashtable army;
 
     // TODO (fix) write javadoc comment
     // it's the variable for the hero
@@ -25,12 +29,14 @@ public class Army
      */
     public Army(Unit hero)
     {
-        Army army[] = new Army[19];
+        Hashtable army = new Hashtable();
         this.hero = hero;
         for (int i = 0; i < 20; i++)
         {
-            army[i] = Villager();
+            Unit villager= new Villager();
+            army.put(i,villager);
         }
+        army.put(1, hero);
     }
 
 }
