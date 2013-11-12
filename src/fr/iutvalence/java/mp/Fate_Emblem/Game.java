@@ -60,10 +60,21 @@ public class Game
     {
         this.map.add_decor();
         System.out.println(this.map);
-        //while (END_GAME != -1)
-        //{
-        //    System.out.println(this.map);
-        //}
 
+    }
+    
+    
+    /**
+     * this method return the position of an army in the map
+     * @param map
+     * @param army
+     */
+    
+    public void Aff_Army (Map map, Army army)
+    {
+        int X=this.players[0].army.elements(1).X;
+        int Y=this.players[0].army.elements(1).Y;
+        map[X][Y]=-2 ;   
+        
     }
 }

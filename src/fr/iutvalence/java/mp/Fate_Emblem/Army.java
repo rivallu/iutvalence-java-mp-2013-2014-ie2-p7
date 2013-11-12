@@ -16,6 +16,7 @@ public class Army
     // it's collection of unities
 
     private Hashtable army;
+    
 
     // TODO (fix) write javadoc comment
     // it's the variable for the hero
@@ -31,12 +32,15 @@ public class Army
     {
         Hashtable army = new Hashtable();
         this.hero = hero;
-        for (int i = 0; i < 20; i++)
+        army.put(1, hero);
+        for (int i = 2; i < 20; i++)
         {
             Unit villager= new Villager();
             army.put(i,villager);
         }
-        army.put(1, hero);
+       
     }
+    
 
 }
+

@@ -46,11 +46,11 @@ public abstract class Unit
     // TODO (fix) consider gathering the two coordinates in a single object called Position
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
-    private int X;
+    private int X =0;
 
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
-    private int Y;
+    private int Y=0;
 
     // TODO (fixed) finish writing comment
 
@@ -84,8 +84,26 @@ public abstract class Unit
      */
     public void deplacement(Unit unit)
     {
-        this.X= this.X+this.speed;
-        this.Y= this.Y+this.speed;
+        int OLDX=this.X;
+        int OLDY=this.Y;
+        
+        if (Map.EARTH==this.X+this.speed || Map.TOWER==this.X+this.speed && this.X+this.speed!= Map.MAP_MAX_SIZE)
+        {
+            if (Map.EARTH==this.Y+this.speed || Map.TOWER==this.Y+this.speed && this.Y+this.speed!= Map.MAP_MAX_SIZE)
+            {
+                this.X=this.X+this.speed;
+                this.Y= this.Y+this.speed;
+               
+            }
+            else 
+            {
+              //retourner erreur de déplacement
+            }
+        }
+        else
+        {
+          //retourner erreur de déplacement
+        }
     }
 
 }
