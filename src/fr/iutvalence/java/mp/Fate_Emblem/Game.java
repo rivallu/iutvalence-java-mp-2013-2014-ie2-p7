@@ -13,19 +13,17 @@ public class Game
      * in millisecond, the time for a player's round
      */
     public static final int TIME = 120000;
-    
-    // TODO (fixed) rewrite comment (do not say it allow to store something, say what is this something)
+
     /**
-     * it's a board for stock the different players
+     * the players
      */
     private Player[] players;
 
-    // TODO (fixed) rewrite comment (do not say it allow to store something, say what is this something)
     /**
-     * It's a Map
+     * the map
      */
     private Map map;
-   
+
     // TODO (fix) looks like a constant, but it is not
     /**
      * variable for know if the game is ending or not
@@ -52,29 +50,28 @@ public class Game
         this.map = new Map();
     }
 
-    // TODO (fixed) write comment
     /**
-     * this method will start the game
+     * calling this method will start the game
      */
     public void play()
     {
         this.map.add_decor();
         System.out.println(this.map);
-
     }
-    
-    
+
+    // TODO (fix) finish writing comment
     /**
      * this method return the position of an army in the map
+     * 
      * @param map
      * @param army
      */
-    
-    public void Aff_Army (Map map, Army army)
+
+    public void Aff_Army(Map map, Army army)
     {
-        int X=this.players[0].army.elements(1).X;
-        int Y=this.players[0].army.elements(1).Y;
-        map[X][Y]=-2 ;   
-        
+        int X = this.players[0].army.elements(1).X;
+        int Y = this.players[0].army.elements(1).Y;
+        map[X][Y] = -2;
+
     }
 }

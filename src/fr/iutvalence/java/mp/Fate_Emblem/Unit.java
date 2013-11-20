@@ -1,5 +1,6 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
+// TODO (fix) rewrite comment
 /**
  * We use this class for create, initialize the unities' statistic
  * 
@@ -8,37 +9,29 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public abstract class Unit
 {
-    /**
-     * We define variables for unities ( atk,def,speed,magic,life)
-     */
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  it's a variable to represent the attack of an unity
+     *  ithe attack of an unity
      */
     private int atk;
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  it's a variable to represent the defense of an unity
+     *  the defense of an unity
      */
     private int def;
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  it's a variable to represent the movement speed of an unity
+     * the movement speed of an unity
      */
     private int speed;
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  it's a variable to represent the magic power of an unity
+     * the magic power of an unity
      */
     private int magic;
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  it's a variable to represent the life of an unity
+     *  the life of an unity
      */
     private int life;
 

@@ -8,18 +8,17 @@ package fr.iutvalence.java.mp.Fate_Emblem;
  */
 public class Player
 {
-    // TODO (fixed) write javadoc comment
     /**
-     * name will be save the name of a player
+     * name of a player
      */
     private String name;
 
-    // TODO (fixed) write javadoc comment
     /**
-     *  this variable will save the army of the player
+     *  the army of the player
      */
     private Army army;
 
+    // TODO (fix) finish writing comment
     /**
      * it's the constructor for generate a new Player
      * @param name it's the name of the player
