@@ -13,34 +13,37 @@ public class Map
      */
     public static final int MAP_MAX_SIZE = 80;
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
+    /**
+     * it's a static variable for represent the earth in the Map
+     */
     public static final int EARTH = -1;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent a decor
+     * it's a static variable for represent water in the Map
      */
     public static final int WATER = 0;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent a decor
+     * it's a static variable for represent wood in the Map
      */
     public static final int WOOD = 1;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent a decor
+     * it's a static variable for represent tower in the Map
      */
     public static final int TOWER = 2;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent a decor
+     * it's a static variable for represent wall in the Map
      */
     public static final int WALL = 3;
 
@@ -81,12 +84,12 @@ public class Map
         return result;
     }
 
-    // TODO (fix) rewrite comment
+    // TODO (fixed) rewrite comment
     /**
-     * This method will generate the decor of the map
+     * this method create the decor of the map 
      */
     // TODO comply with naming conventions
-    public void add_decor()
+    public void addDecor()
     {
         // initialise la map en earth
         for (int i = 0; i < MAP_MAX_SIZE; i++)
@@ -113,16 +116,25 @@ public class Map
     }
 
     // TODO comply with naming conventions
-    // TODO (fix) finish writing comment
+    // TODO (fixed) finish writing comment
     /**
-     * this method reset the position of a unit
+     * this method reset an unit's position after his move  
      * 
      * @param X
      * @param Y
      */
-    public void reset_decor(int X, int Y)
+    public void resetDecor(int X, int Y)
     {
         this.map[X][Y] = -1;
+    }
+    /**
+     * 
+     * @param X Abscissa of an unit
+     * @param Y Ordinate of an unit
+     */
+    public void affUnit(int X, int Y)
+    {
+        this.map[X][Y]=-2;
     }
 
 }

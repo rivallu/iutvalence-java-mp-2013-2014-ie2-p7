@@ -1,4 +1,5 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
+import java.util.*;
 
 // TODO (fixed) rewrite comment
 /**
@@ -24,11 +25,6 @@ public class Game
      */
     private Map map;
 
-    // TODO (fix) looks like a constant, but it is not
-    /**
-     * variable for know if the game is ending or not
-     */
-    private int END_GAME = 1;
 
     /**
      * this constructor create 2 players and generate the map
@@ -55,8 +51,11 @@ public class Game
      */
     public void play()
     {
-        this.map.add_decor();
+        this.map.addDecor();
         System.out.println(this.map);
+        AffArmy(this.map, players[0].army);
+        System.out.println(this.map);
+        
     }
 
     // TODO (fix) finish writing comment
@@ -67,11 +66,10 @@ public class Game
      * @param army
      */
 
-    public void Aff_Army(Map map, Army army)
+    public void AffArmy(Map map, Army army)
     {
-        int X = this.players[0].army.elements(1).X;
-        int Y = this.players[0].army.elements(1).Y;
-        map[X][Y] = -2;
+        Unit posunit = army.Get(1);
+        map.affUnit(posunit.X, posunit.Y);
 
     }
 }

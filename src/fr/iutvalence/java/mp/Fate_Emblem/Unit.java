@@ -39,11 +39,12 @@ public abstract class Unit
     // TODO (fix) consider gathering the two coordinates in a single object called Position
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
-    private int X =0;
+    // A metre dans une classe quand on arrivera à déplacer une unité
+   public int X =50;
 
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
-    private int Y=0;
+    public int Y=50;
 
     // TODO (fixed) finish writing comment
 

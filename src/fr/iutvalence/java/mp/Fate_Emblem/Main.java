@@ -1,8 +1,8 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
-// TODO (fix) rewrite comment
+// TODO (fixed) rewrite comment
 /**
- *This class is the kernel of the game
+ *this class is the main of the porject 
  * @author rivallu
  *
  */
