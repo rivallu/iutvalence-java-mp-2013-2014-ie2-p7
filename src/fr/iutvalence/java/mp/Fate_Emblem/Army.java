@@ -17,7 +17,8 @@ public class Army
     private Hashtable army;
     
 
-    // TODO (fixed) write javadoc comment
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // for)
     /** 
      * it's the variable for the hero
      */

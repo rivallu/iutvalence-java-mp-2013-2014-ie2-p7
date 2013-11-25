@@ -45,9 +45,6 @@ public abstract class Unit
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
     public int Y=50;
-
-    // TODO (fixed) finish writing comment
-
     
     /**
      * it's the constructor for generate all unities

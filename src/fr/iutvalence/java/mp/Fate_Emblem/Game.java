@@ -1,7 +1,7 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 import java.util.*;
 
-// TODO (fixed) rewrite comment
+// TODO (fix) rewrite comment (wrong description)
 /**
  * it's the class for generate the beginning of the game
  * 

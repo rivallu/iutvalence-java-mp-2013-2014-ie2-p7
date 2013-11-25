@@ -13,34 +13,35 @@ public class Map
      */
     public static final int MAP_MAX_SIZE = 80;
 
-    // TODO (fixed) write comment
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // for)
     /**
      * it's a static variable for represent the earth in the Map
      */
     public static final int EARTH = -1;
 
-    // TODO (fixed) rewrite comment (do not say what it is but what it is used
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
     // for)
     /**
      * it's a static variable for represent water in the Map
      */
     public static final int WATER = 0;
 
-    // TODO (fixed) rewrite comment (do not say what it is but what it is used
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
     // for)
     /**
      * it's a static variable for represent wood in the Map
      */
     public static final int WOOD = 1;
 
-    // TODO (fixed) rewrite comment (do not say what it is but what it is used
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
     // for)
     /**
      * it's a static variable for represent tower in the Map
      */
     public static final int TOWER = 2;
 
-    // TODO (fixed) rewrite comment (do not say what it is but what it is used
+    // TODO (fix) rewrite comment (do not say what it is but what it is used
     // for)
     /**
      * it's a static variable for represent wall in the Map
@@ -84,11 +85,9 @@ public class Map
         return result;
     }
 
-    // TODO (fixed) rewrite comment
     /**
      * this method create the decor of the map 
      */
-    // TODO comply with naming conventions
     public void addDecor()
     {
         // initialise la map en earth
@@ -115,8 +114,8 @@ public class Map
 
     }
 
-    // TODO comply with naming conventions
-    // TODO (fixed) finish writing comment
+    // TODO (fix) comply with naming conventions  (parameters)
+    // TODO (fix) finish writing comment (parameters)
     /**
      * this method reset an unit's position after his move  
      * 

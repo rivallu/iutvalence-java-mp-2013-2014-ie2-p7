@@ -1,8 +1,7 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
-// TODO (fixed) rewrite comment
 /**
- *this class is the main of the porject 
+ * this class is the main of the porject 
  * @author rivallu
  *
  */
