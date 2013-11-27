@@ -17,16 +17,16 @@ public class Army
     private Hashtable army;
     
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /** 
-     * it's the variable for the hero
+     *it's for save the hero and add it in the hashtable
      */
     private Unit hero;
 
-    // TODO (fix) finish writing comment
+    // TODO (fixed) finish writing comment
     /**
-     * it's the constructor for generate an army 
+     * it's generate an army with one hero and 19 standard units
      * @param hero
      */
     public Army(Unit hero)

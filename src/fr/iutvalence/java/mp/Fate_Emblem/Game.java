@@ -1,10 +1,10 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 import java.util.*;
 
-// TODO (fix) rewrite comment (wrong description)
+// TODO (fixed) rewrite comment (wrong description)
 /**
- * it's the class for generate the beginning of the game
- * 
+ * It's used to create a new game for two players in a defined map
+ *   
  * @author rivallu
  * 
  */
@@ -58,12 +58,12 @@ public class Game
         
     }
 
-    // TODO (fix) finish writing comment
+    // TODO (fixed) finish writing comment
     /**
-     * this method return the position of an army in the map
+     * return the position of an army in the Map 
      * 
-     * @param map
-     * @param army
+     * @param map the map for display the army 
+     * @param army the army that we want to display
      */
 
     public void AffArmy(Map map, Army army)

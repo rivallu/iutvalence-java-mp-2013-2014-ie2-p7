@@ -13,38 +13,38 @@ public class Map
      */
     public static final int MAP_MAX_SIZE = 80;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent the earth in the Map
+     * it's a static variable used to represent the earth on the map
      */
     public static final int EARTH = -1;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent water in the Map
+     * it's a static variable used to represent water as obstacle on the map
      */
     public static final int WATER = 0;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent wood in the Map
+     * it's a static variable used to represent wood as obstacle in the map
      */
     public static final int WOOD = 1;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent tower in the Map
+     * it's a static variable used to represent tower in the map
      */
     public static final int TOWER = 2;
 
-    // TODO (fix) rewrite comment (do not say what it is but what it is used
+    // TODO (fixed) rewrite comment (do not say what it is but what it is used
     // for)
     /**
-     * it's a static variable for represent wall in the Map
+     * it's a static variable used to represent wall as obstacle in the map
      */
     public static final int WALL = 3;
 
@@ -115,19 +115,19 @@ public class Map
     }
 
     // TODO (fix) comply with naming conventions  (parameters)
-    // TODO (fix) finish writing comment (parameters)
+    // TODO (fixed) finish writing comment (parameters)
     /**
      * this method reset an unit's position after his move  
      * 
-     * @param X
-     * @param Y
+     * @param X Abscissa of an unit
+     * @param Y Ordinate of an unit
      */
     public void resetDecor(int X, int Y)
     {
         this.map[X][Y] = -1;
     }
     /**
-     * 
+     * this method display an unit 
      * @param X Abscissa of an unit
      * @param Y Ordinate of an unit
      */

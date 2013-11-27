@@ -18,11 +18,11 @@ public class Player
      */
     private Army army;
 
-    // TODO (fix) finish writing comment
+    // TODO (fixed) finish writing comment
     /**
-     * it's the constructor for generate a new Player
+     * generate a new player with an army and his name
      * @param name it's the name of the player
-     * @param army
+     * @param army it's his army
      */
     public Player(String name, Army army)
     {

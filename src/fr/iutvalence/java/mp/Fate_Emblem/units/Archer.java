@@ -2,7 +2,12 @@ package fr.iutvalence.java.mp.Fate_Emblem.units;
 
 import fr.iutvalence.java.mp.Fate_Emblem.Unit;
 
-// TODO (fix) write comment
+// TODO (fixed) write comment
+/**
+ * it's the class archer, it's an extand of unit's class
+ * @author rivallu
+ *
+ */
 public class Archer extends Unit
 {
     

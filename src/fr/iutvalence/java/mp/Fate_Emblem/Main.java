@@ -8,9 +8,9 @@ package fr.iutvalence.java.mp.Fate_Emblem;
 public class Main
 {
 
-    // TODO (fix) write comment
+    // TODO (fixed) write comment
     /**
-     * This method will generate 2 player and 2 army 
+     * This method will generate 2 player and 2 army.
      * @param args
      */
     public static void main(String[] args)
