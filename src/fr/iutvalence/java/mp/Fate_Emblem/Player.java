@@ -29,5 +29,11 @@ public class Player
         this.name = name;
         this.army = army;
     }
+    
+    
+    public Army getArmy ()
+    {
+        return this.army;
+    }
 
 }

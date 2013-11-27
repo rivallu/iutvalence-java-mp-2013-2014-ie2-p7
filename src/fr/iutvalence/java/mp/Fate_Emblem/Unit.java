@@ -40,11 +40,11 @@ public abstract class Unit
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
     // A metre dans une classe quand on arrivera à déplacer une unité
-   public int X =50;
+   public int X =60;
 
     // TODO (fix) write comment
     // TODO (fix) comply with naming conventions
-    public int Y=50;
+    public int Y=5;
     
     /**
      * it's the constructor for generate all unities
@@ -75,15 +75,15 @@ public abstract class Unit
      */
     public void deplacement(Unit unit)
     {
-        int OLDX=this.X;
-        int OLDY=this.Y;
+        int OLDX=unit.X;
+        int OLDY=unit.Y;
         
-        if (Map.EARTH==this.X+this.speed || Map.TOWER==this.X+this.speed && this.X+this.speed!= Map.MAP_MAX_SIZE)
+        if (Map.EARTH==unit.X+unit.speed || Map.TOWER==unit.X+unit.speed && unit.X+unit.speed!= Map.MAP_MAX_SIZE)
         {
-            if (Map.EARTH==this.Y+this.speed || Map.TOWER==this.Y+this.speed && this.Y+this.speed!= Map.MAP_MAX_SIZE)
+            if (Map.EARTH==unit.Y+unit.speed || Map.TOWER==unit.Y+unit.speed && unit.Y+unit.speed!= Map.MAP_MAX_SIZE)
             {
-                this.X=this.X+this.speed;
-                this.Y= this.Y+this.speed;
+                unit.X=unit.X+unit.speed;
+                unit.Y= unit.Y+unit.speed;
                
             }
             else 

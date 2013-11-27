@@ -1,7 +1,10 @@
 package fr.iutvalence.java.mp.Fate_Emblem;
 
+import fr.iutvalence.java.mp.Fate_Emblem.units.*;
+
+
 /**
- * this class is the main of the porject 
+ * this class is the main of the project 
  * @author rivallu
  *
  */
@@ -15,8 +18,8 @@ public class Main
      */
     public static void main(String[] args)
     {
-        Army army1 = null;
-
+        Saber hero = new Saber() ;
+        Army army1 = new Army(hero);
         Army army2 = null;
 
         new Game("j1", "j2", army1, army2).play();

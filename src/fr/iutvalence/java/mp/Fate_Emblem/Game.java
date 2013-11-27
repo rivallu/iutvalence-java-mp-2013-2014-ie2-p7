@@ -40,9 +40,9 @@ public class Game
      */
     public Game(String name1, String name2, Army army1, Army army2)
     {
-        Player players[] = new Player[2];
-        players[0] = new Player(name1, army1);
-        players[1] = new Player(name2, army2);
+        this.players = new Player[2];
+        this.players[0] = new Player(name1, army1);
+        this.players[1] = new Player(name2, army2);
         this.map = new Map();
     }
 
@@ -52,10 +52,17 @@ public class Game
     public void play()
     {
         this.map.addDecor();
+        System.out.print("***********************************\n");
         System.out.println(this.map);
-        AffArmy(this.map, players[0].army);
+        System.out.print("***********************************\n");
+        AffArmy(this.map, this.players[0].getArmy());
+        System.out.print("***********************************\n");
         System.out.println(this.map);
-        
+        System.out.print("***********************************\n");
+        this.players[0].getArmy().deplaArmy();
+        AffArmy(this.map, this.players[0].getArmy());
+        System.out.println(this.map);
+        System.out.print("***********************************\n");    
     }
 
     // TODO (fixed) finish writing comment

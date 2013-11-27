@@ -31,8 +31,9 @@ public class Army
      */
     public Army(Unit hero)
     {        
-        Hashtable <Integer, Unit> army = new Hashtable();
-        army.put(1, hero);
+        Hashtable <Integer, Unit> arm = new Hashtable();
+        this.army = arm;
+        this.army.put(1, hero);
         for (int i = 2; i < 20; i++)
         {
             Unit villager= new Villager();
@@ -49,6 +50,20 @@ public class Army
     public Unit Get(int key)
     {
         return (Unit) this.army.get(key);
+    }
+    
+    /**
+     * fait le déplacement de toute l'armée
+     */
+    public void deplaArmy( )
+    {
+        for (int i=1; i<20; i++)
+        {
+            Unit test = (Unit) this.army.get(i);
+            test.deplacement(test);   
+        }
+               
+        
     }
 }
 
