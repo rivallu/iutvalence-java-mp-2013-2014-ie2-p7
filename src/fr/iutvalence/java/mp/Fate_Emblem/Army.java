@@ -57,11 +57,12 @@ public class Army
      */
     public void deplaArmy( )
     {
-        for (int i=1; i<20; i++)
-        {
-            Unit test = (Unit) this.army.get(i);
-            test.deplacement(test);   
-        }
+   
+       for (int i=1; i<20; i++)
+       {
+           Unit test = (Unit) this.army.get(i);
+           test.deplacement(test);      
+       }
                
         
     }

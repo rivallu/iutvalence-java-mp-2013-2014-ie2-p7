@@ -75,8 +75,12 @@ public class Game
 
     public void AffArmy(Map map, Army army)
     {
-        Unit posunit = army.Get(1);
-        map.affUnit(posunit.X, posunit.Y);
-
+        for (int i=1;i<20;i++)
+        {
+            Unit posunit = army.Get(i);
+            map.resetDecor(posunit.getOLDX(), posunit.getOLDY());
+            map.affUnit(posunit.getPosX(), posunit.getPosY());  
+        }
+        
     }
 }

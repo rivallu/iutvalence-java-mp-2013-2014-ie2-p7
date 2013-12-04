@@ -124,7 +124,7 @@ public class Map
      */
     public void resetDecor(int X, int Y)
     {
-        this.map[X][Y] = -1;
+        this.map[X][Y] = EARTH;
     }
     /**
      * this method display an unit 
