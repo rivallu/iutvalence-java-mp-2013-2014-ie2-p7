@@ -52,17 +52,14 @@ public class Game
     public void play()
     {
         this.map.addDecor();
-        System.out.print("***********************************\n");
-        System.out.println(this.map);
-        System.out.print("***********************************\n");
         AffArmy(this.map, this.players[0].getArmy());
         System.out.print("***********************************\n");
         System.out.println(this.map);
         System.out.print("***********************************\n");
-        this.players[0].getArmy().deplaArmy();
+       this.players[0].getArmy().deplaArmy(this.map);
         AffArmy(this.map, this.players[0].getArmy());
         System.out.println(this.map);
-        System.out.print("***********************************\n");    
+        System.out.print("***********************************\n"); 
     }
 
     // TODO (fixed) finish writing comment
@@ -75,7 +72,11 @@ public class Game
 
     public void AffArmy(Map map, Army army)
     {
-        for (int i=1;i<20;i++)
+        Unit poshero=army.Get(1);
+        map.resetDecor(poshero.getOLDX(), poshero.getOLDY());
+        map.affHero(poshero.getPosX(), poshero.getPosY());
+        
+        for (int i=2;i<21;i++)
         {
             Unit posunit = army.Get(i);
             map.resetDecor(posunit.getOLDX(), posunit.getOLDY());

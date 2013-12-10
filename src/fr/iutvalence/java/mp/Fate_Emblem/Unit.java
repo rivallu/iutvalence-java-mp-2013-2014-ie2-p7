@@ -73,6 +73,10 @@ public abstract class Unit
         int Y = (int) (Math.random() * 10);
         this.position= new Position(X,Y); 
     }
+    /**
+     * return the 
+     * @return
+     */
     public int getPosX()
     {
         return this.position.getX();
@@ -96,15 +100,21 @@ public abstract class Unit
      * it's the method for move a unit
      * @param unit
      */
-    public void deplacement(Unit unit)
+    public void deplacement(Map map)
     {
-        //Map.EARTH==unit.X+unit.speed || Map.TOWER==unit.X+unit.speed &&
-        //Map.EARTH==unit.Y+unit.speed || Map.TOWER==unit.Y+unit.speed &&
-        if ((unit.position.getX()+unit.speed!= Map.MAP_MAX_SIZE)&&(unit.position.getX()+unit.speed==Map.EARTH))
+        if ((this.position.getX()+this.speed!= Map.MAP_MAX_SIZE))
         {
-            if (unit.position.getY()+unit.speed!= Map.MAP_MAX_SIZE)
+            if (this.position.getY()+this.speed!= Map.MAP_MAX_SIZE)
             {
-                unit.position.movepos(unit.speed); 
+                if (map.whoIsHere(this.position.getX()+this.speed,this.position.getY()+this.speed)==Map.EARTH)
+                {
+                    this.position.movepos(this.speed); 
+                }
+                else
+                {
+                    this.position.movepos(this.speed-1);
+                }
+                
             }
             else 
             {

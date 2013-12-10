@@ -133,7 +133,45 @@ public class Map
      */
     public void affUnit(int X, int Y)
     {
-        this.map[X][Y]=-2;
+        if (this.map[X][Y]!=-1)
+        {
+            this.affUnit(X-1,Y-1);
+            
+        }
+        else 
+        {
+            this.map[X][Y]=-2;            
+        }
+        
+    }
+    /**
+     * display the hero
+     * @param X Abscissa of the future position
+     * @param Y ordinate of the future position
+     */
+    
+    public void affHero(int X, int Y)
+    {
+        if (this.map[X][Y]!=-1)
+        {
+            this.affUnit(X-1,Y-1);
+            
+        }
+        else 
+        {
+            this.map[X][Y]=-5;            
+        }
+        
+    }
+    /**
+     * return the value of a case
+     * @param X Abscissa of the future position
+     * @param Y ordinate of the future position
+     * @return
+     */
+    public int whoIsHere(int X,int Y)
+    {
+        return this.map[X][Y];
     }
 
 }
